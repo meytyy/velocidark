@@ -1,0 +1,44 @@
+body {
+  width: 240px;  /* Увеличили ширину для 4 кнопок в ряд */
+  margin: 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+}
+
+.speed-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки вместо 3 */
+  gap: 8px;
+}
+
+button {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Стиль для кнопки 1x */
+button.default-speed {
+  background-color: #404040; /* Отличающийся цвет */
+  font-weight: bold; /* Выделение */
+}
+
+button:hover {
+  background-color: #4d4d4d;
+}
